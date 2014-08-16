@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">Stop Eat</string>
+	<string name="weight">Weight</string>
+	<string name="height">Height</string>
+	<string name="calculateBmi">Calculate</string>
+	<string name="bmi"></string>
+
+</resources>
