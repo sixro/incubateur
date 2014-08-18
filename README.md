@@ -8,5 +8,5 @@ An incubator for all my unfinished ideas.
   * **the-frog**: A game done to study [Phaser](http://phaser.io) and [Pixel Art](http://en.wikipedia.org/wiki/Pixel_art)
   * **db4j**: a small library to simplify the work with databases in Java
   * **propertiesutils**: utilities on Properties in Java
-  * **csv2xls**: a simple tool to obtain excels from CSVs. **You can use the `sql` ant task for this instead of this tool**
+  * **csv2xls**: a simple tool to obtain excels from CSVs. **You can use the [sql ant task](https://ant.apache.org/manual/Tasks/sql.html) for this instead of this tool**
 
