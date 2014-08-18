@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+	<Resource id="demoDS" type="DataSource">    
+		JdbcDriver org.h2.Driver
+		JdbcUrl jdbc:h2:~/data
+		UserName sa
+		Password sa
+		JtaManaged true
+	</Resource>
+	<!--
+	<Resource id="demoDS" type="DataSource">    
+		JdbcDriver org.hsqldb.jdbcDriver    
+		JdbcUrl jdbc:hsqldb:file:./data/
+		UserName sa    
+		JtaManaged true    
+	</Resource>
+	  -->
+</tomee>

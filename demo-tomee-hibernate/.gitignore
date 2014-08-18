@@ -1,0 +1,7 @@
+target
+data
+.project
+.classpath
+.settings
+
+jboss-as*

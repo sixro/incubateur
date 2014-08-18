@@ -8,6 +8,7 @@ An incubator for all my unfinished ideas.
   * **csv2xls**: a simple tool to obtain excels from CSV(s)
   * **database-maven-plugin**: a database maven plugin useful to generate object starting from the DB
   * **database-maven-plugin-testproject**: a project used to test `database-maven-plugin`
+  * **demo-tomee-hibernate**: an example of a J2EE project configured to use TomEE, Hibernate, etc...
   * **logviewer**: a small project created to learn JavaFX...
   * **propertiesutils**: utilities on Properties in Java
   * **sql-unit**: a small "test" if I can do TDD on SQL... it's possible!!!
