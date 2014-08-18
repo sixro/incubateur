@@ -1,0 +1,3 @@
+#sql-unit
+
+The aim of this project is simply to show that TDD can be done everywhere... so if you want to use it to do really TDD with your SQL/Database project, I have to say that this project is absolutely DRAFT...
