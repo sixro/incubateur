@@ -1,0 +1,316 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>databaseadapter</groupId>
+	<artifactId>databaseadapter-maven-plugin-testproject</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>DatabaseAdapter Maven Plugin Test Project</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<javaVersion>1.6</javaVersion>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>3.1.2.RELEASE</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- == Database ==================================== -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.3</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<!-- == Testing ===================================== -->
+		<dependency>
+			<groupId>org.jmock</groupId>
+			<artifactId>jmock-junit4</artifactId>
+			<version>2.5.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest-all</artifactId>
+			<version>1.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.14</version>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${javaVersion}</source>
+					<target>${javaVersion}</target>
+
+					<debug>true</debug>
+					<showDeprecation>true</showDeprecation>
+					<showWarnings>true</showWarnings>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>src/main/java/app/database</directory>
+							<includes>
+								<include>**/DB.java</include>
+							</includes>
+							<followSymlinks>false</followSymlinks>
+						</fileset>
+						<fileset>
+							<directory>src/main/java/app/database/table</directory>
+							<includes>
+								<include>**/*Table.java</include>
+							</includes>
+							<followSymlinks>false</followSymlinks>
+						</fileset>
+						<fileset>
+							<directory>src/main/java/app/database/dao</directory>
+							<includes>
+								<include>**/*Table.java</include>
+							</includes>
+							<followSymlinks>false</followSymlinks>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>1.6</version>
+				<executions>
+					<execution>
+						<id>add-source</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>add-source</goal>
+						</goals>
+						<configuration>
+							<sources>
+								<source>src/databaseadapter</source>
+							</sources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.11</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-failsafe-plugin</artifactId>
+				<version>2.11</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>integration-test</goal>
+							<goal>verify</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.8</version>
+				<configuration>
+					<stylesheetfile>${basedir}/src/main/javadoc/stylesheet.css</stylesheetfile>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>2.0</version>
+				<dependencies>
+					<!-- NOTA: aggiunge il supporto per SSH e SCP -->
+					<dependency>
+						<groupId>org.apache.maven.wagon</groupId>
+						<artifactId>wagon-ssh</artifactId>
+						<version>2.1</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+			<plugin>
+				<groupId>databaseadapter</groupId>
+				<artifactId>databaseadapter-maven-plugin</artifactId>
+				<version>1.0-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<id>generate-db-adapter</id>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+						<configuration>
+							<driverClass>oracle.jdbc.driver.OracleDriver</driverClass>
+							<url>jdbc:oracle:thin:@10.0.0.46:1551:ORA10A</url>
+							<username>DIPMASTER</username>
+							<password>DIPMASTER</password>
+							<connectionProperties>
+								<!-- NOTE: Oracle needs this property in order to read tables and columns remarks -->
+								<property>
+									<name>remarksReporting</name>
+									<value>true</value>
+								</property>
+							</connectionProperties>
+
+							<schemaPattern>DIPMASTER</schemaPattern>
+							<includes>
+								<include>ENT_BSNS</include>
+								<include>CDC_.*</include>
+							</includes>
+							<excludes>
+								<exclude>^BIN.*</exclude>
+							</excludes>
+
+							<templates>
+								<template>
+									<package>app.database</package>
+									<className>DB</className>
+									<source>${basedir}/src/databaseadapter/databaseadapter-DB.vm</source>
+									<outputDirectory>${basedir}/src/main/java</outputDirectory>
+								</template>
+
+								<template>
+									<foreach>true</foreach>
+
+									<package>app.database.table</package>
+									<className>${tableNameAsCamelCase}Table</className>
+									<source>${basedir}/src/databaseadapter/databaseadapter-Table.vm</source>
+									<outputDirectory>${basedir}/src/main/java</outputDirectory>
+								</template>
+
+								<!-- NOTE: here we use always the suffix Table in order to represent
+								       the object in more clear manner... we don't think the suffix DAO is
+								       so clear to a common developer...
+								   -->
+								<template>
+									<foreach>true</foreach>
+
+									<package>app.database.dao</package>
+									<className>${tableNameAsCamelCase}Table</className>
+									<source>${basedir}/src/databaseadapter/databaseadapter-DAO.vm</source>
+									<outputDirectory>${basedir}/src/main/java</outputDirectory>
+								</template>
+							</templates>
+						</configuration>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>com.oracle</groupId>
+						<artifactId>ojdbc6</artifactId>
+						<version>11.2.0.3</version>
+						<scope>compile</scope>
+					</dependency>
+				</dependencies>
+			</plugin>
+
+		</plugins>
+
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											databaseadapter
+										</groupId>
+										<artifactId>
+											databaseadapter-maven-plugin
+										</artifactId>
+										<versionRange>
+											[1.0-SNAPSHOT,)
+										</versionRange>
+										<goals>
+											<goal>generate</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore></ignore>
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<repositories>
+		<repository>
+			<id>project-repo</id>
+			<name>Project Repository</name>
+			<url>file://${basedir}/project-repo</url>
+			<layout>default</layout>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>project-repo</id>
+			<name>Project Repository</name>
+			<url>file://${basedir}/project-repo</url>
+			<layout>default</layout>
+		</pluginRepository>
+	</pluginRepositories>
+</project>
+

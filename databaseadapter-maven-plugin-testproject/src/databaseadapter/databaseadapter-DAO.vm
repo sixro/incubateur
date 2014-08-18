@@ -1,0 +1,248 @@
+#*
+  * This template represents DAO with a default implementation made with Spring JDBC.
+  * It is to be intended as a peer of low level to be used to create objects of higher level manually mantained (e.g. Repository, etc...)
+  *#
+#set($tableName = ${table.name.toLowerCase()})
+#set($tableNameAsCamelCase = $stringUtils.toCamelCase(${table.name.toLowerCase()}))
+package ${package};
+
+import java.util.*;
+
+import javax.annotation.Generated;
+import javax.sql.DataSource;
+
+import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang.Validate;
+import org.apache.commons.lang.text.StrSubstitutor;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+
+
+/**
+ * Represents {@code DAO} for table {@code ${table.name}}.
+ *
+ * @author databaseadapter-maven-plugin
+ */
+@Generated(value="databaseadapter-maven-plugin")
+public class ${className} {
+
+	private static final Log LOG = LogFactory.getLog(${className}.class);
+	
+	/**
+	 * Contains the name of the table.
+	 *
+	 * <p>
+	 * Can be used to format others {@code SQL}.
+	 * </p>
+	 */		
+	public static final String TABLE = "${tableName}";
+		
+	/**
+	 * Contains a preformatted {@code SELECT COUNT(*) FROM ${tableName}}.
+	 */		
+	public static final String SQL_SELECT_COUNT = "SELECT COUNT(*) FROM " + TABLE;
+
+	/**
+	 * Contains a preformatted {@code SELECT * FROM ${tableName}}.
+	 */		
+	public static final String SQL_SELECT_ALL = "SELECT * FROM " + TABLE;
+
+	/**
+	 * Contains a preformatted {@code DELETE FROM ${tableName}}.
+	 */		
+	public static final String SQL_DELETE = "DELETE FROM " + TABLE;
+	
+	/**
+	 * Contains all columns found in table {@code ${table.name}}.
+	 */
+	public static enum Column {
+#foreach ($column in ${table.columns})
+#set ($columnName = ${column.name.toLowerCase()})
+		/**
+		 * Represents column {@code ${column.name}} of table {@code ${table.name}}.
+		 *
+		 * <p>
+		 * $!{column.remarks}
+		 * </p>
+		 */
+		$columnName#if ($foreach.hasNext),#{end} // data type: ${column.dataType}
+
+#end
+	};
+
+	@SuppressWarnings("unused")
+	private final DataSource dataSource;
+	private final NamedParameterJdbcTemplate namedJdbcTemplate;
+	
+	public ${className}(DataSource dataSource) {
+		super();
+		Validate.notNull(dataSource, "'dataSource' cannot be null");
+		
+		this.dataSource = dataSource;
+		this.namedJdbcTemplate = new NamedParameterJdbcTemplate(dataSource);
+	}
+	
+	public void insert(${className}.Record record) {
+		LOG.info("inserting record " + record + "...");
+		
+		Column[] columns = record.keySet().toArray(new Column[]{ });
+		String sql = new StringBuilder("INSERT INTO ")
+			.append(TABLE)
+			.append(" (")
+			.append(StringUtils.join(namesOf(columns), ", "))
+			.append(") VALUES (")
+			.append(StringUtils.join(namesOf(columns, ":${name}"), ", "))
+			.append(")")
+			.toString();
+		LOG.debug("... generated SQL: '" + sql);
+			
+		Map<String, Object> paramMap = new HashMap<String, Object>(columns.length);
+		for (Map.Entry<Column, Object> entry : record.entrySet())
+			paramMap.put(entry.getKey().name(), entry.getValue());
+		
+		LOG.debug("... executing statement with parameters: " + paramMap);
+		
+		int affected = namedJdbcTemplate.update(sql, paramMap);
+		if (affected == 0)
+			throw new IllegalStateException("execution of a SQL of insert has affected " + affected + " rows?!?");
+		
+		LOG.info("... insert of record " + record + " done");
+	}
+
+	public void update(${className}.Record record) {
+		throw new UnsupportedOperationException();
+	}
+
+	public void delete(${className}.Record record) {
+		throw new UnsupportedOperationException();
+	}
+
+	public boolean exist(${className}.Record record) {
+		throw new UnsupportedOperationException();
+	}
+
+	public void updateAll(Map<${className}.Column, Object> what, Map<${className}.Column, Object> allMatches) {
+		throw new UnsupportedOperationException();
+	}
+
+	public void updateAll(Map<${className}.Column, Object> what, String where) {
+		throw new UnsupportedOperationException();
+	}
+
+	public void deleteAll(Map<${className}.Column, Object> allMatches) {
+		throw new UnsupportedOperationException();
+	}
+
+	public void deleteAll(String where) {
+		throw new UnsupportedOperationException();
+	}
+
+	public ${className}.Record selectFirst(Map<${className}.Column, Object> allMatches) {
+		throw new UnsupportedOperationException();
+	}
+
+	public ${className}.Record selectFirst(String where) {
+		throw new UnsupportedOperationException();
+	}
+
+	public List<${className}.Record> selectAll(Map<${className}.Column, Object> allMatches) {
+		throw new UnsupportedOperationException();
+	}
+
+	public List<${className}.Record> selectAll(String where) {
+		throw new UnsupportedOperationException();
+	}
+
+	public void foreach(String where, Callback<${className}.Record> callback) {
+		throw new UnsupportedOperationException();
+	}
+
+	public void foreach(Map<${className}.Column, Object> allMatches, Callback<${className}.Record> callback) {
+		throw new UnsupportedOperationException();
+	}
+
+	public int countAll() {
+		throw new UnsupportedOperationException();
+	}
+
+	public int countAll(Map<${className}.Column, Object> allMatches) {
+		throw new UnsupportedOperationException();
+	}
+
+	public int countAll(String where) {
+		throw new UnsupportedOperationException();
+	}
+	
+	public boolean exist(Map<${className}.Column, Object> allMatches) {
+		throw new UnsupportedOperationException();
+	}
+
+	public boolean exist(String where) {
+		throw new UnsupportedOperationException();
+	}
+
+	/**
+	 * Returns the names of specified columns.
+	 *
+	 * @param columns an array of columns of table {@code ${table.name}}
+	 * @return names of specified columns
+	 */
+	public static String[] namesOf(${className}.Column[] columns) {
+		String[] cols = new String[columns.length];
+		for (int i = 0; i < columns.length; i++) cols[i] = columns[i].name();
+		return cols;
+	}
+
+	/**
+	 * Returns the names of specified columns applying specified template.
+	 * 
+	 * <p>
+	 * The template has to contain placeholder {@code name} to represent the column name. E.g.
+	 * </p>
+	 * <pre>
+	 *     ${name} = ?
+	 * </pre>
+	 *
+	 * @param columns an array of columns of table {@code ${table.name}}
+	 * @param template a template ala {@link StrSubstitutor} of {@code commons-lang} library
+	 * @return names of specified columns
+	 */
+	public static String[] namesOf(${className}.Column[] columns, String template) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		String[] cols = new String[columns.length];
+		for (int i = 0; i < columns.length; i++) {
+			map.put("name", columns[i].name());
+			cols[i] = StrSubstitutor.replace(template, map);
+		}
+		return cols;
+	}
+	
+	public static class Record extends LinkedHashMap<${className}.Column, Object> {
+	
+		private static final long serialVersionUID = 1L;
+
+		public Record() {
+			super(${className}.Column.values().length);
+		}
+
+#foreach ($column in ${table.columns})
+#set ($columnName = ${column.name.toLowerCase()})
+#set($type = "Object")
+#if (${column.dataType} == 1 || ${column.dataType} == 12 || ${column.dataType} == 1111)
+	#set($type = "String")
+#elseif (${column.dataType} == 3)
+	#set($type = "java.math.BigDecimal")
+#elseif (${column.dataType} == 93)
+	#set($type = "Date")
+#end
+		/* ${column.name}: ${type} (${column.dataType}) */
+		public ${type} get${stringUtils.toCamelCase($columnName)}() { return (${type}) get(${className}.Column.$columnName); }
+
+		public void set${stringUtils.toCamelCase($columnName)}(${type} value) { put(${className}.Column.$columnName, value); }
+
+#end
+
+	}
+
+}

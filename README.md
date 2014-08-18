@@ -13,3 +13,5 @@ An incubator for all my unfinished ideas.
   * **cachedobject**: a small library to implement caching on object through annotation
   * **sql2csv**: the aim of this tool is to provide a fast way to create a CSV from a SQL result **You can use the [sql ant task](https://ant.apache.org/manual/Tasks/sql.html) for this instead of this tool**
   * **sql-unit**: a small "test" if I can do TDD on SQL... it's possible!!!
+  * **database-maven-plugin**: a database maven plugin useful to generate object starting from the DB
+  * **database-maven-plugin-testproject**: a project used to test `database-maven-plugin`
