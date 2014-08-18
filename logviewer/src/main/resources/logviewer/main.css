@@ -1,0 +1,18 @@
+.root {
+    -fx-font: 11px "sans-serif";
+    -fx-base: rgb(255, 255, 255);
+}
+
+/*
+.tab-pane:top>*.tab-header-area {
+    -fx-padding: 1.416667em 5px 0.0em 3em;
+}
+*/
+
+#tree {
+    -fx-base: rgb(44, 200, 200);
+}
+
+.mainFxmlClass {
+
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<top><Pane prefHeight="80.0" prefWidth="600.0" styleClass="dialog-title" BorderPane.alignment="CENTER" />
+</top>
+<center><GridPane hgap="7.0" vgap="7.0" BorderPane.alignment="CENTER">
+  <columnConstraints>
+    <ColumnConstraints halignment="LEFT" hgrow="NEVER" maxWidth="53.0" minWidth="53.0" prefWidth="53.0" />
+    <ColumnConstraints halignment="RIGHT" hgrow="NEVER" maxWidth="48.0" minWidth="48.0" prefWidth="48.0" />
+<ColumnConstraints hgrow="NEVER" maxWidth="57.0" minWidth="57.0" prefWidth="57.0" />
+<ColumnConstraints hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="200.0" />
+<ColumnConstraints hgrow="NEVER" maxWidth="31.0" minWidth="31.0" prefWidth="31.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+<RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+<RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+<RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+<children><RadioButton mnemonicParsing="false" text="Local" GridPane.columnSpan="2" /><Label text="Directory" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" /><TextField GridPane.columnIndex="3" GridPane.rowIndex="1" /><Button mnemonicParsing="false" text="..." GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="1" /><Label text="Format" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" /><TextField GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+</children>
+<padding>
+<Insets left="21.0" right="21.0" />
+</padding>
+</GridPane>
+</center>
+<bottom><AnchorPane prefHeight="50.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+<children><Button cancelButton="true" layoutX="484.0" layoutY="13.0" mnemonicParsing="false" prefWidth="100.0" text="Cancel" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="13.0" /><Button defaultButton="true" layoutX="371.0" layoutY="13.0" mnemonicParsing="false" prefWidth="100.0" text="Ok" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="13.0" />
+</children></AnchorPane>
+</bottom></BorderPane>

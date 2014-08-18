@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="logviewer.MainController">
+    <stylesheets>
+        <URL value="@main.css" />
+        <URL value="@font-awesome.css" />
+    </stylesheets>
+<children><SplitPane fx:id="splitPane" dividerPositions="0.29797979797979796" focusTraversable="true" layoutX="39.0" layoutY="138.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+<children><TreeView fx:id="tree" layoutX="-13.0" layoutY="21.0" prefHeight="398.0" prefWidth="174.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+</children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+<children><TabPane fx:id="tabPane" layoutX="-10.0" layoutY="14.0" prefHeight="398.0" prefWidth="416.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+  <tabs>
+    <Tab text="Untitled Tab 1">
+<content><BorderPane prefHeight="200.0" prefWidth="200.0">
+<top><ToolBar prefWidth="200.0" BorderPane.alignment="CENTER">
+<items><ToggleButton fx:id="btnExample" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onAction="#onExampleButtonClick" prefHeight="25.0" prefWidth="25.0" />
+</items>
+</ToolBar>
+</top>
+<bottom><Label prefHeight="15.0" prefWidth="415.0" text="Label" BorderPane.alignment="CENTER_LEFT" />
+</bottom>
+<center><TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+  <columns>
+    <TableColumn prefWidth="75.0" text="C1" />
+    <TableColumn prefWidth="75.0" text="C2" />
+  </columns>
+</TableView>
+</center></BorderPane>
+</content></Tab>
+  </tabs>
+</TabPane>
+</children></AnchorPane>
+  </items>
+</SplitPane>
+</children>
+</AnchorPane>
