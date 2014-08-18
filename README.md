@@ -9,4 +9,5 @@ An incubator for all my unfinished ideas.
   * **db4j**: a small library to simplify the work with databases in Java
   * **propertiesutils**: utilities on Properties in Java
   * **csv2xls**: a simple tool to obtain excels from CSVs. **You can use the [sql ant task](https://ant.apache.org/manual/Tasks/sql.html) for this instead of this tool**
+  * **velocity-doclet**: a doclet from which it's possible to generate something starting from Java source files and a template
 

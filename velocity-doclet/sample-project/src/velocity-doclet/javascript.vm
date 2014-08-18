@@ -1,0 +1,17 @@
+#if (${class.tags("javascript").size()} > 0)
+/*
+   ${class.commentText()}
+
+   NOTE: this file is auto-generated. DO NOT TOUCH!
+
+   PAY ATTENTION: this is only an example of what you can do with VelocityDoclet and do not represent a complete
+                  javascript generator.
+ */
+function ${class.name()} {
+#foreach ($field in ${class.fields()})
+#if (! ${field.transient})
+    var ${field.name()};
+#end
+#end
+}
+#end
