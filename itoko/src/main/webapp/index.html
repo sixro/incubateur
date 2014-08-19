@@ -1,0 +1,66 @@
+<!doctype html> 
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8" />
+	<title>The Frog</title>
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+	<style type="text/css">
+		body {
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript">
+
+var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update, render: render });
+
+function preload() {
+	game.load.image('sky', 'assets/sky.png');
+}
+
+function create() {
+	game.stage.backgroundColor = '#000';
+
+	// Fullscreen
+	game.scale.fullScreenScaleMode = Phaser.ScaleManager.EXACT_FIT;
+	game.scale.startFullScreen();
+
+	// multi-touch
+	// PAY ATTENTION: on iOS as soon as you use 6 fingers you'll active the minimise app gesture - and there's nothing we can do to stop that, sorry
+	game.input.addPointer();
+	game.input.addPointer();
+	game.input.addPointer();
+	game.input.addPointer();
+
+	game.input.onDown.add(gofull, this);
+}
+
+function gofull() {
+	if (game.scale.isFullScreen)
+	{
+		game.scale.stopFullScreen();
+	}
+	else
+	{
+		game.scale.startFullScreen();
+	}
+}
+
+function update() {
+}
+
+function render() {
+	//  Just renders out the pointer data when you touch the canvas
+	game.debug.pointer(game.input.mousePointer);
+	game.debug.pointer(game.input.pointer1);
+	game.debug.pointer(game.input.pointer2);
+	game.debug.pointer(game.input.pointer3);
+	game.debug.pointer(game.input.pointer4);
+	game.debug.pointer(game.input.pointer5);
+	game.debug.pointer(game.input.pointer6);
+}
+
+</script>
+</body>
+</html>
