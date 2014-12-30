@@ -7,20 +7,13 @@
 package logviewer;
 
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.logging.*;
+
 import javafx.application.Application;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.event.EventType;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.StackPane;
-import javafx.scene.text.Font;
+import javafx.scene.*;
+import javafx.scene.input.*;
 import javafx.stage.Stage;
 import logviewer.util.FontAwesome;
 

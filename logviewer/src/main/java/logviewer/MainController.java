@@ -8,14 +8,10 @@ package logviewer;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.SplitPane;
-import javafx.scene.control.TabPane;
-import javafx.scene.control.ToggleButton;
-import javafx.scene.control.TreeItem;
-import javafx.scene.control.TreeView;
+import javafx.scene.control.*;
 import logviewer.util.FontAwesome;
 
 /**
