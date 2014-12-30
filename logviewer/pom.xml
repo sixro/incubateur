@@ -71,6 +71,12 @@
 				</executions>
 				<configuration>
 					<mainClass>${main.class}</mainClass>
+					<systemProperties>
+						<systemProperty>
+							<key>prism.text</key>
+							<value>t2k</value>
+						</systemProperty>
+					</systemProperties>
 				</configuration>
 			</plugin>
 		</plugins>
