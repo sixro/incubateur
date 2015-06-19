@@ -12,6 +12,7 @@
     }],
     "require": {
         "php": ">=5.4.0",
+        "slim/slim": "~2.0",
         "psr/log": "1.0.0",
         "anahkiasen/underscore-php": "~1.2"
     },

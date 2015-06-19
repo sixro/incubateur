@@ -5,7 +5,7 @@ all: validate test
 validate:
 	@echo ""
 	@echo "--  Validating  --------------------------------------------------------"
-	composer install
+	composer update
 
 test:
 	@echo ""
