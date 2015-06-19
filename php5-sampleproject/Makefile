@@ -1,13 +1,13 @@
-.PHONY: all clean test
+.PHONY: all validate test
 
-all: clean test
+all: validate test
 
-clean:
+validate:
 	@echo ""
-	@echo "--  Cleaning target  ---------------------------------------------------"
-	rm -rf target
+	@echo "--  Validating  --------------------------------------------------------"
+	composer install
 
 test:
 	@echo ""
 	@echo "--  Testing  -----------------------------------------------------------"
-	phpunit ./tests
+	phpunit
