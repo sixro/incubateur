@@ -1,0 +1,54 @@
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	<!-- 
+	<appender name="EMAIL" class="ch.qos.logback.classic.net.SMTPAppender">
+		<smtpHost>smtp.gmail.com</smtpHost>
+		<smtpPort>465</smtpPort>
+		<SSL>true</SSL>
+		<username>mailsender4free@gmail.com</username>
+		<password>mi serve per loggare</password>
+		<from>mailsender4free@gmail.com</from>
+
+		<to>rsimoni.job@gmail.com</to>
+		<subject>TESTING: %logger{20} - %m</subject>
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%date %-5level %logger{35} - %message%n</pattern>
+		</layout>
+	</appender>
+	  -->
+	<appender name="EMAIL" class="lessannoyingsmtpappender.LessAnnoyingSMTPAppender">
+		<smtpHost>smtp.gmail.com</smtpHost>
+		<smtpPort>465</smtpPort>
+		<ssl>true</ssl>
+		
+		<username>mailsender4free@gmail.com</username>
+		<password>mi serve per loggare</password>
+		
+		<from>mailsender4free@gmail.com</from>
+
+		<to>rsimoni.job@gmail.com</to>
+		<firstEventSubject>[Testing] a %-5level event require your attention: "%m" by %logger{20}</firstEventSubject>
+		<firstEventBodyTemplate>
+			This email has been sent to you to notify an event that require your attention.&lt;br/&gt;
+			&lt;br/&gt;
+			{{logRow}}&lt;br/&gt;
+			&lt;br/&gt;
+			--&lt;br/&gt;
+			Testing team
+		</firstEventBodyTemplate>
+		<!-- 
+		<layout class="ch.qos.logback.classic.PatternLayout">
+			<pattern>%date %-5level %logger{35} - %message%n</pattern>
+		</layout>
+		  -->
+	</appender>
+	<root level="debug">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="EMAIL" />
+	</root>
+</configuration>
