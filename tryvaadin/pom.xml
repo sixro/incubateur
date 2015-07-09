@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.github.sixro.tryvaadin</groupId>
+	<artifactId>tryvaadin-parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>tryvaadin :: parent</name>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.7</java.version>
+
+		<junit.version>4.11</junit.version>
+		<jmock.version>2.6.0</jmock.version>
+		<hamcrest.version>1.3</hamcrest.version>
+	</properties>
+
+	<modules>
+		<module>server</module>
+		<module>client</module>
+	</modules>
+
+</project>
