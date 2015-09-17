@@ -14,15 +14,13 @@ import javax.ws.rs.*;
 @Path("/employees")
 public class EmployeesResource {
 
-	private final Repository repository;
-
-    public EmployeesResource(Repository repository) {
-    	this.repository = repository;
-    }
-
     @GET
+    @Produces("application/json")
     public List<Employee> findAll() {
-    	return Arrays.asList(repository.findAll());
+    	return Arrays.asList(
+    			new Employee("Mario", "Rossi"), 
+    			new Employee("Giuseppe", "Verdi")
+    		);
     }
     
 }

@@ -117,7 +117,7 @@
                     <doclet>jaxrsdoclet.JaxRsDoclet</doclet>
                     <docletArtifacts>
                         <docletArtifact>
-                            <groupId>com.github.sixro</groupId>
+                            <groupId>com.github.sixro.jaxrsdoclet</groupId>
                             <artifactId>jaxrsdoclet</artifactId>
                             <version>0.1.0-SNAPSHOT</version>
                         </docletArtifact>

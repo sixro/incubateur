@@ -1,5 +1,6 @@
 package sample;
 
+import java.io.Serializable;
 import java.util.*;
 
 /**
@@ -9,8 +10,10 @@ import java.util.*;
  * Blah blah blah.
  * </p>
  */
-public class Employee {
+public class Employee implements Serializable {
 
+	private static final long serialVersionUID = 1L;
+	
 	private final String firstName;
 	private final String lastName;
 
@@ -19,5 +22,18 @@ public class Employee {
     	this.lastName = lastName;
     }
 
-    
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [firstName=" + firstName + ", lastName=" + lastName
+				+ "]";
+	}
+
 }
