@@ -8,7 +8,7 @@
         <version>0.1.0-SNAPSHOT</version>
     </parent>
     <artifactId>sample-project</artifactId>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <properties>
 		<jersey.version>2.21</jersey.version>
@@ -98,7 +98,8 @@
                         </goals>
                         <configuration>
                             <sources>
-                                <source>src/jaxrsdoclet</source>
+                                <source>src/main/webapp</source>
+                                <source>src/main/jaxrsdoclet</source>
                             </sources>
                         </configuration>
                     </execution>
@@ -108,37 +109,40 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
-                <configuration>
-                    <!--
-                    <quiet>true</quiet>
-                    <show>private</show>
-                      -->
-                    <doclet>jaxrsdoclet.JaxRsDoclet</doclet>
-                    <docletArtifacts>
-                        <docletArtifact>
-                            <groupId>com.github.sixro.jaxrsdoclet</groupId>
-                            <artifactId>jaxrsdoclet</artifactId>
-                            <version>0.1.0-SNAPSHOT</version>
-                        </docletArtifact>
-                    </docletArtifacts>
-                    <!--
-                    <overview>src/javadoc/overview.html</overview>
-                      -->
+                <version>2.10.3</version>
+                <executions>
+                    <execution>
+                        <id>generate-jaxrs-docs</id>
+                        <goals>
+                            <goal>javadoc</goal>
+                        </goals>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <doclet>jaxrsdoclet.JaxRsDoclet</doclet>
+                            <docletArtifacts>
+                                <docletArtifact>
+                                    <groupId>com.github.sixro.jaxrsdoclet</groupId>
+                                    <artifactId>jaxrsdoclet</artifactId>
+                                    <version>${project.version}</version>
+                                </docletArtifact>
+                            </docletArtifacts>
+                            <overview>src/main/jaxrsdoclet/overview.html</overview>
 
-                    <!-- useStandardDocletOptions=false is required -->
-                    <useStandardDocletOptions>false</useStandardDocletOptions>
+                            <!-- useStandardDocletOptions parameter has to be false! -->
+                            <useStandardDocletOptions>false</useStandardDocletOptions>
 
-                    <!--
-                    <additionalparam>
-                        -d "${project.build.directory}/javascript"
-                        -template-overview ""
-                        -template-package ""
-                        -template-class "${basedir}/src/velocity-doclet/javascript.vm"
-                        -output-extension js
-                    </additionalparam>
-                      -->
-                </configuration>
+                            <!--
+                            <additionalparam>
+                                -d "${project.build.directory}/javascript"
+                                -template-overview ""
+                                -template-package ""
+                                -template-class "${basedir}/src/velocity-doclet/javascript.vm"
+                                -output-extension js
+                            </additionalparam>
+                              -->
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
 			<plugin>
@@ -159,87 +163,4 @@
 
     </build>
 
-    <!--
-	<profiles>
-        <profile>
-            <id>generate-javascript</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.9.1</version>
-                        <configuration>
-                            <quiet>true</quiet>
-                            <show>private</show>
-                            <doclet>velocitydoclet.VelocityDoclet</doclet>
-                            <docletArtifacts>
-                                <docletArtifact>
-                                    <groupId>com.github.rsimoni</groupId>
-                                    <artifactId>velocity-doclet</artifactId>
-                                    <version>0.1-SNAPSHOT</version>
-                                </docletArtifact>
-                            </docletArtifacts>
-                            <overview>src/javadoc/overview.html</overview>
-
-                            <!- useStandardDocletOptions=false is required ->
-                            <useStandardDocletOptions>false</useStandardDocletOptions>
-
-                            <additionalparam>
-                                -d "${project.build.directory}/javascript"
-                                -template-overview ""
-                                -template-package ""
-                                -template-class "${basedir}/src/velocity-doclet/javascript.vm"
-                                -output-extension js
-                            </additionalparam>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-
-        <profile>
-            <id>generate-repositories</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.9.1</version>
-                        <configuration>
-                            <quiet>true</quiet>
-                            <show>private</show>
-                            <doclet>velocitydoclet.VelocityDoclet</doclet>
-                            <docletArtifacts>
-                                <docletArtifact>
-                                    <groupId>com.github.rsimoni</groupId>
-                                    <artifactId>velocity-doclet</artifactId>
-                                    <version>0.1-SNAPSHOT</version>
-                                </docletArtifact>
-                            </docletArtifacts>
-                            <overview>src/javadoc/overview.html</overview>
-
-                            <!- useStandardDocletOptions=false is required ->
-                            <useStandardDocletOptions>false</useStandardDocletOptions>
-
-                            <additionalparam>
-                                -d "${project.build.directory}/generated-source/repositories"
-                                -template-overview ""
-                                -template-package ""
-                                -template-class "${basedir}/src/velocity-doclet/repository.vm"
-                                -output-extension java
-                            </additionalparam>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-	</profiles>
-       -->
 </project>

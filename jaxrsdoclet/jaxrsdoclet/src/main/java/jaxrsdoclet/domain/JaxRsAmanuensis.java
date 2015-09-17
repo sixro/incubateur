@@ -1,6 +1,5 @@
 package jaxrsdoclet.domain;
 
-import java.util.Map;
 
 /**
  * Represents the &quot;amanuensis&quot; reading documentation in javadoc and writing it in output.
@@ -16,8 +15,8 @@ public class JaxRsAmanuensis {
 	}
 
 	public void doIt() {
-		Map<String, Object> codeDocs = codeDocumentationReader.readAll();
-		documentationWriter.write(codeDocs);
+		CodeDocumentation codeDoc = codeDocumentationReader.readAll();
+		documentationWriter.write(codeDoc);
 	}
 
 }

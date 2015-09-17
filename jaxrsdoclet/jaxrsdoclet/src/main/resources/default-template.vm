@@ -1,0 +1,7 @@
+${codeDoc.overview}
+
+#foreach ($restResourceDoc in ${codeDoc.restResourceDocs})
+${restResourceDoc.path}<br />
+
+${restResourceDoc.comment}<br />
+#end #* foreach *#

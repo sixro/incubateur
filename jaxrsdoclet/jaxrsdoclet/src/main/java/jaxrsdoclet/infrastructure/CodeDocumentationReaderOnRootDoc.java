@@ -2,7 +2,7 @@ package jaxrsdoclet.infrastructure;
 
 import java.util.*;
 
-import jaxrsdoclet.domain.CodeDocumentationReader;
+import jaxrsdoclet.domain.*;
 
 import com.sun.javadoc.*;
 import com.sun.javadoc.AnnotationDesc.ElementValuePair;
@@ -17,19 +17,23 @@ public class CodeDocumentationReaderOnRootDoc implements CodeDocumentationReader
 	}
 
 	@Override
-	public Map<String, Object> readAll() {
-		Map<String, Object> codeDocs = new LinkedHashMap<String, Object>();
-		List<ClassDoc> resourcesDocs = findJaxRsResources();
-		for (ClassDoc resourceDoc : resourcesDocs) {
-			System.out.println(resourceDoc.name());
-			System.out.println("  a. " + resourceDoc.typeName());
-			System.out.println("    1. " + resourceDoc.getRawCommentText());
-			System.out.println("    2. " + resourceDoc.commentText());
-			System.out.println("    3. " + resourceDoc.dimension());
-			System.out.println("    4. " + pathOf(resourceDoc));
+	public CodeDocumentation readAll() {
+		String overview = rootDoc.commentText();
+		CodeDocumentation codeDoc = new CodeDocumentation(overview);
+		
+		List<ClassDoc> classDocs = findJaxRsResources();
+		for (ClassDoc classDoc : classDocs) {
+//			System.out.println(resourceDoc.name());
+//			System.out.println("  a. " + resourceDoc.typeName());
+//			System.out.println("    1. " + resourceDoc.getRawCommentText());
+//			System.out.println("    2. " + resourceDoc.commentText());
+//			System.out.println("    3. " + resourceDoc.dimension());
+//			System.out.println("    4. " + pathOf(resourceDoc));
+			RestResourceDoc restResourceDoc = new RestResourceDoc(pathOf(classDoc), classDoc.commentText());
+			codeDoc.add(restResourceDoc);
 		}
-		codeDocs.put("", "");
-		return codeDocs;
+		
+		return codeDoc;
 	}
 
 	private List<ClassDoc> findJaxRsResources() {

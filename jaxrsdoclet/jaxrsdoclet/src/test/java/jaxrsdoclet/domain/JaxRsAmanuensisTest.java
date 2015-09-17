@@ -17,11 +17,11 @@ public class JaxRsAmanuensisTest {
 	
 	@Test
 	public void read_doc_and_then_write() {
-		final Map<String, Object> codeDocumentation = new HashMap<String, Object>();		
+		final CodeDocumentation aCodeDocumentation = new CodeDocumentation("my overview");		
 		context.checking(new Expectations() {{ 
 			oneOf(codeDocumentationReader).readAll();
-				will(returnValue(codeDocumentation));
-			oneOf(documentationWriter).write(codeDocumentation);
+				will(returnValue(aCodeDocumentation));
+			oneOf(documentationWriter).write(aCodeDocumentation);
 		}});
 		
 		amanuensis.doIt();
