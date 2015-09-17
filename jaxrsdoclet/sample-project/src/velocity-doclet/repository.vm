@@ -1,0 +1,70 @@
+#if (${class.tags("repository").size()} > 0)
+#*
+ Print method signature.
+ *#
+#macro (signature $method)public ${method.returnType()} ${method.name()}(#foreach ($param in ${method.parameters()})#if ($velocityCount > 1), #{end}${param}#{end})#{end} #* macro *#
+#*
+ Create a map with specified parameters.
+ *#
+#macro (newParameters $params)
+    Map<String, Object> parameters = new LinkedHashMap<String, Object>();
+#foreach ($param in $params)
+        JDBCUtils.toFlatParameters(parameters, "${param.name()}", ${param.name()});
+#end #* for each *#
+#end #* macro *#
+#set ($filename = "${class.name()}JDBC")
+package ${class.containingPackage().name()};
+
+import java.util.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import javax.sql.*;
+
+import org.springframework.jdbc.core.*;
+import org.springframework.jdbc.core.namedparam.*;
+
+import sample.util.*;
+
+/**
+ * Represents an implementation of {@link ${class.name()}} based on JDBC.
+ *
+ * NOTE: this class has been auto generated. DO NOT TOUCH!
+ */
+public class ${filename} implements ${class.name()} {
+
+    private final NamedParameterJdbcTemplate jdbcTemplate;
+
+    public ${filename}(DataSource dataSource) {
+        this(new NamedParameterJdbcTemplate(dataSource));
+    }
+
+    public ${filename}(NamedParameterJdbcTemplate jdbcTemplate) {
+        super();
+        this.jdbcTemplate = jdbcTemplate;
+    }
+#foreach ($method in ${class.methods()})
+
+    #signature($method) {
+    #newParameters(${method.parameters()})
+#if (${method.returnType()} == "void")
+#foreach ($tag in ${method.tags("sql")}) #set ($tagText = ${tag.text()}) #set ($sql = $tagText)
+        jdbcTemplate.update("${sql}", parameters);
+#end #* all sql tags *#
+    }
+#else
+#if (${method.returnType().dimension().length() > 0)
+        return jdbcTemplate.query("${method.tags("sql")[0].text()}", parameters, new RowMapper<${method.returnType().typeName()}>() {
+            @Override
+            public ${method.returnType()} mapRow(ResultSet rs, int rowNum) throws SQLException {
+                // FIXME implementare il mapper
+                return null;
+            }
+        });
+    }
+#else
+#end
+#end #* if void *#
+#end #* all methods *#
+}
+#end #* repository tag *#
