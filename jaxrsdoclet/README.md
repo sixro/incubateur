@@ -17,3 +17,5 @@ A *DRAFT* JaxRsDoclet, 'cause I hate the output of Swagger!
   * dest dirs and template should be parameterized
   * fix dependency mess (junit, jmock, etc...)
   * use last plugin versions
+  * setup title
+  * setup a logo?
