@@ -8,6 +8,7 @@ A *DRAFT* JaxRsDoclet, 'cause I hate the output of Swagger!
 ### Must have
 
   * try to use bootstrap and create a template looking good
+    check this: http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=enable-affix-via-data-attribute
   * add another resource and take a look at what happens
   * we need a left nav bar with links to overview and to all resources
   * parse methods annotated with GET, POST, etc...
