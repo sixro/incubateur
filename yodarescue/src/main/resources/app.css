@@ -1,0 +1,24 @@
+.root {
+	-fx-font-family: "Tahoma", "Helvetica", serif;
+	-fx-font-size: 0.95em;
+}
+
+.split-pane > .split-pane-divider {  
+    -fx-padding: 0.0 0.01em 0.0 0.0em;  
+}
+
+#gluefxOutlineTreeView .tree-cell {
+	-fx-background-color: #e4e9ef;
+	
+	-fx-text-fill: #768099;
+	-fx-font-weight: bold;
+}
+
+#gluefxOutlineTreeView .tree-cell.leaf {
+	-fx-text-fill: black;
+	-fx-font-weight: normal;
+}
+
+#gluefxOutlineTreeView .tree-cell:selected {
+	-fx-background-color: linear-gradient(#c5cad0 20%, #b1b6bc 80%);
+}

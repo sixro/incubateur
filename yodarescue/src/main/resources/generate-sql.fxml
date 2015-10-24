@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="BASELINE_RIGHT" layoutX="22.0" layoutY="22.0" prefHeight="26.0" prefWidth="135.0" text="Booking ID" />
+      <TextField fx:id="tfBookingID" editable="false" layoutX="164.0" layoutY="22.0" prefHeight="26.0" prefWidth="178.0" />
+      <Button fx:id="generateSqlsButton" defaultButton="true" layoutX="166.0" layoutY="156.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" text="Generate SQL" AnchorPane.leftAnchor="166.0" />
+      <Label alignment="BASELINE_RIGHT" layoutX="77.0" layoutY="94.0" prefHeight="19.0" prefWidth="80.0" text="Amount" />
+      <TextField fx:id="bookingIdTextField1" alignment="BASELINE_RIGHT" layoutX="164.0" layoutY="90.0" prefHeight="26.0" prefWidth="123.0" promptText="100,00" />
+      <TextField layoutX="292.0" layoutY="90.0" prefHeight="26.0" prefWidth="49.0" promptText="EUR" />
+      <TextArea layoutX="165.0" layoutY="190.0" prefHeight="159.0" prefWidth="421.0" />
+      <Button fx:id="btnClose" cancelButton="true" layoutX="493.0" layoutY="360.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="93.0" text="Close" />
+      <Label alignment="BASELINE_RIGHT" layoutX="78.0" layoutY="192.0" prefHeight="19.0" prefWidth="80.0" text="Sql(s)" />
+      <Label alignment="BASELINE_RIGHT" layoutX="49.0" layoutY="58.0" prefHeight="19.0" prefWidth="110.0" text="Transaction ID" />
+      <ComboBox layoutX="165.0" layoutY="55.0" prefHeight="26.0" prefWidth="178.0" />
+      <Label alignment="BASELINE_CENTER" layoutX="354.0" layoutY="58.0" prefHeight="19.0" prefWidth="24.0" text="at" />
+      <TextField editable="false" layoutX="385.0" layoutY="55.0" prefHeight="26.0" prefWidth="148.0" />
+      <Label alignment="BASELINE_RIGHT" layoutX="78.0" layoutY="125.0" prefHeight="19.0" prefWidth="80.0" text="Auth code" />
+      <TextField alignment="BASELINE_CENTER" layoutX="165.0" layoutY="123.0" prefHeight="26.0" prefWidth="123.0" promptText="123456" />
+      <Label alignment="BASELINE_RIGHT" layoutX="285.0" layoutY="125.0" prefHeight="19.0" prefWidth="80.0" text="Cvv Result" />
+      <Label alignment="BASELINE_RIGHT" layoutX="433.0" layoutY="125.0" prefHeight="19.0" prefWidth="32.0" text="ECI" />
+      <TextField alignment="BASELINE_CENTER" layoutX="472.0" layoutY="123.0" prefHeight="26.0" prefWidth="60.0" promptText="5" />
+      <TextField alignment="BASELINE_CENTER" layoutX="373.0" layoutY="123.0" prefHeight="26.0" prefWidth="60.0" promptText="M" />
+   </children>
+</AnchorPane>
