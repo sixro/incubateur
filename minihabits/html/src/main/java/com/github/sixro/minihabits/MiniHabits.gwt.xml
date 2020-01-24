@@ -1,0 +1,16 @@
+<module rename-to='minihabits'>
+	<inherits name='com.badlogic.gdx.backends.gdx_backends_gwt' />
+
+	<source path='core'/>
+	<source path='html'/>
+
+	<public path="resources" />
+
+	<entry-point class='com.github.sixro.minihabits.html.MiniHabitsHtml'/>
+	<set-configuration-property name="gdx.assetpath" value="assets" />
+	<set-configuration-property name="gdx.assetoutputpath" value="html/target/webapp" />
+	
+	<collapse-all-properties />
+	
+	<set-configuration-property name='xsiframe.failIfScriptTag' value='FALSE'/>
+</module>
