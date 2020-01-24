@@ -1,0 +1,2 @@
+# This variable is used for example as a prefix of all relative URLs
+spring.freemarker.request-context-attribute: rc
