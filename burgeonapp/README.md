@@ -1,0 +1,3 @@
+# burgeonapp
+Represents an exercise with SpringMVC, databases, etc... we will see whether or not this will become useful...
+The experiment was: can we map a DB into a webapp with some convention over configuration or other tricks
