@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox fx:id="tickersPane" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="24.0" spacing="4.0">
+               <children>
+                  <Label text="FTSE MIB 12345 +0.78%" />
+               </children>
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding></HBox>
+            <SplitPane dividerPositions="0.75" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" orientation="VERTICAL" prefHeight="768.0" prefWidth="1024.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <SplitPane fx:id="centralPaneContainer" dividerPositions="0.5" layoutX="-21.0" layoutY="-31.0" prefHeight="98.0" prefWidth="158.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <TabPane prefHeight="381.0" prefWidth="486.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <tabs>
+                                        <Tab fx:id="watchlistsPane" text="WATCHLISTS">
+                                             <content>
+                                                <AnchorPane fx:id="watchlistsPaneContainer" prefHeight="200.0" prefWidth="200.0">
+                                                <!--
+                                                	<fx:include fx:id="mainWatchlists" source="mainWatchlists.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                  -->
+                                                </AnchorPane>
+                                             </content>
+                                          </Tab>
+                                        <Tab fx:id="portfolioPane" text="PORTFOLIO">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="4.0" layoutY="4.0" text="Not yet implemented" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </Tab>
+                                      </tabs>
+                                    </TabPane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <Label layoutX="4.0" layoutY="4.0" text="Not yet implemented" />
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <SplitPane dividerPositions="0.4" layoutX="-49.0" layoutY="-39.0" prefHeight="98.0" prefWidth="158.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" SplitPane.resizableWithParent="false">
+                                 <children>
+                                    <TabPane layoutX="-229.0" layoutY="-72.0" prefHeight="380.0" prefWidth="303.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <tabs>
+                                        <Tab fx:id="newsPane" text="NEWS">
+                                          <content>
+                                            <AnchorPane fx:id="newsContainer">
+                                            </AnchorPane>
+                                          </content>
+                                        </Tab>
+                                        <Tab fx:id="indicesPane" text="INDICES">
+                                          <content>
+                                            <AnchorPane fx:id="indicesContainer" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                          </content>
+                                        </Tab>
+                                          <Tab fx:id="spreadPane" text="SPREAD">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="4.0" layoutY="4.0" text="Not yet implemented" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </Tab>
+                                      </tabs>
+                                    </TabPane>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <TabPane layoutX="54.0" layoutY="41.0" prefHeight="380.0" prefWidth="715.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <tabs>
+                                        <Tab fx:id="alertPane" text="ALERT">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="4.0" layoutY="4.0" text="Not yet implemented" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </Tab>
+                                        <Tab fx:id="ordersPane" text="ORDERS">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label layoutX="4.0" layoutY="4.0" text="Not yet implemented" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </Tab>
+                                      </tabs>
+                                    </TabPane>
+                                 </children>
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

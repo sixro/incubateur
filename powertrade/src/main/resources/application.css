@@ -1,0 +1,92 @@
+.root {
+	-fx-font: 0.8em "Trebuchet MS";
+}
+
+.split-pane *.split-pane-divider {
+    -fx-padding: 0 1 0 1;
+}
+
+#lblLogo {
+	-fx-font-size: 1.2em;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 2 );
+}
+
+
+/*
+ ==  Prefs  ========================================
+ */
+
+#btnPrefs {
+	-fx-graphic: url("img/fa_gear_14.png");
+	-fx-font-weight: bold;
+}
+
+
+/*
+ ==  Main  ========================================
+ */
+
+#btnHelp {
+	-fx-graphic: url("img/fa_question_14.png");
+	-fx-font-weight: bold;
+}
+
+
+/*
+ ==  Main  ========================================
+ */
+
+#tickersPane {
+	-fx-background-color: white;
+}
+
+#watchlistsPane .tab-label {
+	-fx-graphic: url("img/fa_list_14.png");
+	-fx-font-weight: bold;	
+}
+
+#btnEditWatchLists {
+	-fx-graphic: url("img/fa_wrench_14.png");
+	-fx-font-weight: bold;
+}
+
+#btnShowChart {
+	-fx-graphic: url("img/fa_area-chart_14.png");
+	-fx-font-weight: bold;
+}
+
+#portfolioPane .tab-label {
+	-fx-graphic: url("img/fa_th-list_14.png");
+	-fx-font-weight: bold;
+}
+
+#newsPane .tab-label {
+	-fx-graphic: url("img/fa_newspaper-o_14.png");
+	-fx-font-weight: bold;
+}
+
+#indicesPane .tab-label {
+	-fx-graphic: url("img/fa_globe_14.png");
+	-fx-font-weight: bold;
+}
+
+#spreadPane .tab-label {
+	-fx-graphic: url("img/fa_map-signs_14.png");
+	-fx-font-weight: bold;
+}
+
+#alertPane .tab-label {
+	-fx-graphic: url("img/fa_bell_14.png");
+	-fx-font-weight: bold;
+}
+
+#ordersPane .tab-label {
+	-fx-graphic: url("img/fa_th-large_14.png");
+	-fx-font-weight: bold;
+}
+
+#leftPaneListsContainer .tab {
+	-fx-font-weight: bold;
+}
+

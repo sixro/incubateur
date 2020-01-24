@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Xuperior</string>
+
+    <string name="start">START</string>
+    <string name="calibrate">Calibrate</string>
+    <string name="save">Save</string>
+    <string name="settings">Settings</string>
+    
+    <string name="preference_audio">Audio</string>
+
+    <string name="preference_use_custom_buffer_size">Use custom buffer size</string>
+    <string name="preference_use_custom_buffer_size_summary">Using a custom buffer size lower than default can improves instrument control, but can produce unexpected results too</string>
+
+    <string name="preference_custom_buffer_size">Custom buffer size</string>
+    
+</resources>

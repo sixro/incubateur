@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<BorderPane maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="200.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox spacing="4.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="cboWatchlists" maxWidth="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnEditWatchLists" minWidth="26.0" mnemonicParsing="false" prefWidth="26.0" text="Button" />
+            <Region HBox.hgrow="ALWAYS" />
+            <ToggleButton fx:id="btnShowChart" contentDisplay="GRAPHIC_ONLY" minWidth="26.0" mnemonicParsing="false" prefWidth="26.0" text="_chart" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="tableStocksInSelWatchlist" minWidth="100.0" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="tcSymbol" editable="false" prefWidth="75.0" text="SYM" />
+          <TableColumn fx:id="tcName" editable="false" prefWidth="75.0" text="NAME" />
+            <TableColumn fx:id="tcLast" editable="false" prefWidth="75.0" text="LAST" />
+            <TableColumn fx:id="tcVar" editable="false" prefWidth="75.0" text="VAR%" />
+            <TableColumn fx:id="tcVolume" editable="false" prefWidth="75.0" text="VOLUME" />
+            <TableColumn fx:id="tcBidQuantity" editable="false" prefWidth="75.0" text="Q. BID" />
+            <TableColumn fx:id="tcBid" editable="false" prefWidth="75.0" text="BID" />
+            <TableColumn fx:id="tcAsk" editable="false" prefWidth="75.0" text="ASK" />
+            <TableColumn fx:id="tcAskQuantity" editable="false" prefWidth="75.0" text="Q. ASK" />
+        </columns>
+         <BorderPane.margin>
+            <Insets top="4.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <padding>
+      <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+   </padding>
+</BorderPane>

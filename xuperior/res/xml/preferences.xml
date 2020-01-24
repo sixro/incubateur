@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+		xmlns:android="http://schemas.android.com/apk/res/android"
+	>
+	<PreferenceCategory 
+			android:title="@string/preference_audio"
+			android:key="pref_audio"
+		>
+		<CheckBoxPreference 
+				android:title="@string/preference_use_custom_buffer_size"
+				android:summary="@string/preference_use_custom_buffer_size_summary" 
+				android:key="pref_audio_use_custom_buffer_size"
+				android:defaultValue="false" 
+			/>
+		<ListPreference 
+				android:title="@string/preference_custom_buffer_size"
+				android:key="pref_audio_custom_buffer_size"
+				android:dependency="pref_audio_use_custom_buffer_size"
+			/>
+	</PreferenceCategory>
+</PreferenceScreen>
