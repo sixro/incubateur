@@ -1,0 +1,81 @@
+body {
+    font-family: "Trebuchet MS";
+}
+
+pre, tt {
+    font-family: "Courier New";
+}
+
+tt {
+    background-color: transparent;
+}
+
+#bodyColumn h2 {
+    font-size: 24px;
+}
+
+#bodyColumn h3 {
+    font-size: 20px;
+}
+
+pre.prettyprint {
+    margin-left: 1em;
+    margin-right: 1em;
+    
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+
+    background-color: black;
+    color: #eeeeee;
+}
+
+pre.prettyprint span {
+    color: #eeeeee;
+}
+
+table.apidoc {
+    width: 100%;
+    border: 0;
+    padding: 0;
+}
+
+table.apidoc td {
+    vertical-align: top;
+}
+
+td.inverted {
+    width: 55%;
+    background-color: #444444 !important;
+    color: #eeeeee;
+    padding-left: 2em; padding-right: 2em;
+}
+
+td.inverted pre {
+    border: 0;
+    margin: 0;
+}
+
+table.errors {
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+table.errors tr {
+    background-color: #444444;
+}
+
+table.errors td {
+    padding: 1em;
+}
+
+table.errors tr:nth-child(even) {
+    background-color: #555555;
+}
+
+table.errors td.first {
+    width: 25%;
+    text-align: right;
+    font-weight: bold;
+}
+

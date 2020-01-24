@@ -1,0 +1,10 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "v1",
+    "title" : "trysiteinwebapp API"
+  },
+  "host" : "trysiteinwebapp.herokuapp.com",
+  "basePath" : "/api",
+  "schemes" : [ "http", "https" ]
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+<properties>
+    <title>Page Title</title>
+    <author email="user@company.com">John Doe</author>
+</properties>
+
+<head>
+    <!--
+    <meta ... />
+      -->
+</head>
+
+<body>
+
+    <table class="apidoc" >
+        <tr>
+            <td>
+                <h2>Example</h2>
+                <p>Represents an example.<br/>
+                And this is a useless intro.</p>
+
+            </td>
+            <td class="inverted">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                <h3>The blah blah object</h3>
+                <p>Nothing to say.</p>
+            </td>
+            <td class="inverted">
+                <h3>&nbsp;</h3>
+                <h5>Example Response</h5>
+                <pre class="prettyprint">Hello World</pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Retrieve an example</h3>
+                <p>An example can be retrieved.</p>
+            </td>
+            <td class="inverted">
+                <h3>&nbsp;</h3>
+                <h5>Definition</h5>
+                <pre class="prettyprint">GET {baseurl}/api/examples</pre>
+                <h5>Example Request</h5>
+                <pre class="prettyprint">$ curl http://trysiteinwebapp.herokuapp.com/api/examples</pre>
+                <h5>HTTP status code summary</h5>
+                <table class="errors" >
+                    <tr>
+                        <td class="first" >200 - OK</td>
+                        <td>Everything worked as expected.</td>
+                    </tr>
+                    <tr>
+                        <td class="first" >404 - Not Found</td>
+                        <td>When specified resource can’t be found (it cannot happens :) )</td>
+                    </tr>
+                </table>
+                <p>
+                    &nbsp;
+                </p>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</document>
