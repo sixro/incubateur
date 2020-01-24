@@ -1,0 +1,59 @@
+{  
+    com.badlogic.gdx.graphics.g2d.BitmapFont: {  
+        paragraph-normal: { file: suplexmentary_comic-24-normal.fnt },  
+        paragraph-bold:   { file: suplexmentary_comic-24-bold.fnt },  
+        title-normal:     { file: coaster-32-normal.fnt },  
+        title-bold:       { file: coaster-32-normal.fnt },  
+        title-alt-normal: { file: coaster-32-normal.fnt },  
+        title-alt-bold:   { file: coaster-32-normal.fnt }
+    },  
+    com.badlogic.gdx.graphics.Color: {  
+        red: { a: 1, b: 0, g: 0, r: 1 },  
+        green: { a: 1, b: 0, g: 1, r: 0 },  
+        blue: { a: 1, b: 1, g: 0, r: 0 },  
+        white: { hex: "ffffff" },  
+        black: { hex: "000000" } 
+    },  
+    com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {  
+        default:          { font: paragraph-normal, fontColor: white },  
+        paragraph-normal: { font: paragraph-normal, fontColor: white },  
+        paragraph-bold:   { font: paragraph-normal, fontColor: white },  
+        title-normal:     { font: title-normal,     fontColor: red }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {  
+        default: {
+            up: button, 
+            down: button-down, 
+            checked: button-down, 
+            disabled: button-disabled
+        },  
+        transparent: { },  
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {  
+        default: {
+            up: button, 
+            down: button-down, 
+            checked: button-down, 
+            disabled: button-disabled, 
+
+            font: paragraph-bold, 
+            fontColor: white
+        },  
+    },
+
+	com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle: {
+		default: { 
+			checkboxOn: button-down, 
+			checkboxOff: button, 
+			font: paragraph-bold, 
+			fontColor: white
+		}
+	},
+	com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+		default: { titleFont: title-bold, background: button-disabled, titleFontColor: white },
+		dialog: { titleFont: title-bold, background: button-disabled, titleFontColor: white }
+	},
+	com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle: {
+		default-horizontal: { background: button-disabled, knob: button }
+	}
+}

@@ -1,0 +1,33 @@
+{
+    com.badlogic.gdx.graphics.g2d.BitmapFont: { 
+        tiny-font:        { file: debussy-8.fnt }, 
+        small-font:       { file: debussy-16.fnt }, 
+        normal-font:      { file: debussy-24.fnt }, 
+        medium-font:      { file: debussy-36.fnt }, 
+        large-font:       { file: debussy-48.fnt },
+        title-font:       { file: debussy-72.fnt },
+    },
+    com.badlogic.gdx.graphics.Color: {
+        white: { a: 1, b: 1, g: 1, r: 1 },
+        black: { a: 1, b: 0, g: 0, r: 0 },
+        green: { a: 1, b: 0, g: 1, r: 0 },
+        red: { a: 1, b: 0, g: 0, r: 1 }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {  
+        tiny:    { font: tiny-font,   fontColor: white },
+        small:   { font: small-font,  fontColor: white },
+        default: { font: normal-font, fontColor: white },
+        medium:  { font: medium-font, fontColor: white },
+        large:   { font: large-font,  fontColor: white },
+        title:   { font: title-font,  fontColor: white }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+        default: { down: button-pressed, up: button }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle: {
+        default: { down: button-pressed, up: button }
+    },
+    com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+        default: { down: button-pressed, up: button, font: normal-font, fontColor: white }
+    }
+}

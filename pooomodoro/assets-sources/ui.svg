@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg3002"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="ui.svg"
+   inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/button-pressed.png"
+   inkscape:export-xdpi="72"
+   inkscape:export-ydpi="72">
+  <defs
+     id="defs3004">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3084">
+      <stop
+         style="stop-color:#ffcc00;stop-opacity:1"
+         offset="0"
+         id="stop3086" />
+      <stop
+         style="stop-color:#ffd42a;stop-opacity:1"
+         offset="1"
+         id="stop3088" />
+    </linearGradient>
+    <filter
+       id="filter3870"
+       inkscape:label="Cross-smooth"
+       inkscape:menu="Blurs"
+       inkscape:menu-tooltip="Blur inner borders and intersections"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur3872"
+         stdDeviation="3" />
+      <feColorMatrix
+         id="feColorMatrix3874"
+         result="fbSourceGraphic"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 6 -2.5 " />
+    </filter>
+    <filter
+       id="filter3000"
+       inkscape:label="Colorize"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Blend image or object with a flood color and set lightness and contrast"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix3002"
+         values="0.90000000000000002"
+         in="SourceGraphic"
+         type="saturate"
+         result="result2" />
+      <feFlood
+         id="feFlood3004"
+         flood-color="rgb(254,102,0)"
+         flood-opacity="1"
+         result="result1" />
+      <feBlend
+         id="feBlend3006"
+         in2="result2"
+         mode="multiply"
+         in="result1"
+         result="result3" />
+      <feComposite
+         id="feComposite3008"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="result4" />
+    </filter>
+    <filter
+       id="filter3010"
+       inkscape:label="Colorize"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Blend image or object with a flood color and set lightness and contrast"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix3012"
+         values="0.90000000000000002"
+         in="SourceGraphic"
+         type="saturate"
+         result="result2" />
+      <feFlood
+         id="feFlood3014"
+         flood-color="rgb(254,102,0)"
+         flood-opacity="1"
+         result="result1" />
+      <feBlend
+         id="feBlend3016"
+         in2="result2"
+         mode="multiply"
+         in="result1"
+         result="result3" />
+      <feComposite
+         id="feComposite3018"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="result4" />
+    </filter>
+    <filter
+       id="filter3020"
+       inkscape:label="Colorize"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Blend image or object with a flood color and set lightness and contrast"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix3022"
+         values="0.90000000000000002"
+         in="SourceGraphic"
+         type="saturate"
+         result="result2" />
+      <feFlood
+         id="feFlood3024"
+         flood-color="rgb(254,102,0)"
+         flood-opacity="1"
+         result="result1" />
+      <feBlend
+         id="feBlend3026"
+         in2="result2"
+         mode="multiply"
+         in="result1"
+         result="result3" />
+      <feComposite
+         id="feComposite3028"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="result4" />
+    </filter>
+    <filter
+       id="filter3030"
+       inkscape:label="Colorize"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Blend image or object with a flood color and set lightness and contrast"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix3032"
+         values="0.90000000000000002"
+         in="SourceGraphic"
+         type="saturate"
+         result="result2" />
+      <feFlood
+         id="feFlood3034"
+         flood-color="rgb(254,102,0)"
+         flood-opacity="1"
+         result="result1" />
+      <feBlend
+         id="feBlend3036"
+         in2="result2"
+         mode="multiply"
+         in="result1"
+         result="result3" />
+      <feComposite
+         id="feComposite3038"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="result4" />
+    </filter>
+    <filter
+       id="filter3040"
+       inkscape:label="Colorize"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Blend image or object with a flood color and set lightness and contrast"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix3042"
+         values="0.90000000000000002"
+         in="SourceGraphic"
+         type="saturate"
+         result="result2" />
+      <feFlood
+         id="feFlood3044"
+         flood-color="rgb(254,102,0)"
+         flood-opacity="1"
+         result="result1" />
+      <feBlend
+         id="feBlend3046"
+         in2="result2"
+         mode="multiply"
+         in="result1"
+         result="result3" />
+      <feComposite
+         id="feComposite3048"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="result4" />
+    </filter>
+    <filter
+       id="filter3050"
+       inkscape:label="Colorize"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Blend image or object with a flood color and set lightness and contrast"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix3052"
+         values="0.90000000000000002"
+         in="SourceGraphic"
+         type="saturate"
+         result="result2" />
+      <feFlood
+         id="feFlood3054"
+         flood-color="rgb(254,102,0)"
+         flood-opacity="1"
+         result="result1" />
+      <feBlend
+         id="feBlend3056"
+         in2="result2"
+         mode="multiply"
+         in="result1"
+         result="result3" />
+      <feComposite
+         id="feComposite3058"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="result4" />
+      <feBlend
+         blend="normal"
+         id="feBlend3072"
+         in2="result4" />
+    </filter>
+    <filter
+       id="filter3060"
+       inkscape:label="Colorize"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Blend image or object with a flood color and set lightness and contrast"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix3062"
+         values="0.90000000000000002"
+         in="SourceGraphic"
+         type="saturate"
+         result="result2" />
+      <feFlood
+         id="feFlood3064"
+         flood-color="rgb(254,102,0)"
+         flood-opacity="1"
+         result="result1" />
+      <feBlend
+         id="feBlend3066"
+         in2="result2"
+         mode="multiply"
+         in="result1"
+         result="result3" />
+      <feComposite
+         id="feComposite3068"
+         in2="SourceGraphic"
+         operator="in"
+         k2="1"
+         result="result4" />
+      <feBlend
+         blend="normal"
+         id="feBlend3070"
+         in2="result4"
+         mode="screen" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3084"
+       id="linearGradient3090"
+       x1="94.464287"
+       y1="65.576469"
+       x2="94.464287"
+       y2="74.867409"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3084"
+       id="linearGradient3113"
+       gradientUnits="userSpaceOnUse"
+       x1="94.464287"
+       y1="65.576469"
+       x2="94.464287"
+       y2="74.867409"
+       gradientTransform="translate(-1.767767,79.802051)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="227.67812"
+     inkscape:cy="846.83976"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata3007">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       ry="5.30123"
+       rx="5.2083335"
+       y="55.846699"
+       x="63.147224"
+       height="63.614758"
+       width="62.5"
+       id="rect3082"
+       style="fill:#554400;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/button.png"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-ydpi="86.400002" />
+    <rect
+       style="fill:#ffdd55;fill-opacity:1;stroke:none"
+       id="rect3076"
+       width="60"
+       height="60"
+       x="64.397224"
+       y="56.604313"
+       rx="5"
+       ry="5"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/button.png"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-ydpi="86.400002" />
+    <rect
+       ry="4.158206"
+       rx="4.158206"
+       y="61.655075"
+       x="69.44799"
+       height="49.898476"
+       width="49.898476"
+       id="rect3078"
+       style="fill:#aa8800;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/button.png"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-ydpi="86.400002" />
+    <rect
+       style="fill:url(#linearGradient3090);fill-opacity:1;stroke:none"
+       id="rect3080"
+       width="49.898476"
+       height="48.291332"
+       x="69.44799"
+       y="63.262218"
+       rx="4.158206"
+       ry="4.0242772"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/button.png"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-ydpi="86.400002" />
+    <rect
+       inkscape:export-ydpi="86.400002"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/button.png"
+       ry="4.0242772"
+       rx="4.158206"
+       y="143.06427"
+       x="67.680222"
+       height="48.291332"
+       width="49.898476"
+       id="rect3111"
+       style="fill:url(#linearGradient3113);fill-opacity:1;stroke:none" />
+    <rect
+       inkscape:export-ydpi="86.400002"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/facebook.png"
+       style="fill:#25375f;fill-opacity:1;stroke:none"
+       id="rect4006"
+       width="62.5"
+       height="63.614758"
+       x="147.14722"
+       y="55.846699"
+       rx="5.2083335"
+       ry="5.30123" />
+    <rect
+       inkscape:export-ydpi="86.400002"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/facebook.png"
+       ry="5"
+       rx="5"
+       y="56.604313"
+       x="148.39722"
+       height="60"
+       width="60"
+       id="rect4008"
+       style="fill:#8ba2d1;fill-opacity:1;stroke:none" />
+    <rect
+       inkscape:export-ydpi="86.400002"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/facebook.png"
+       style="fill:#2c4270;fill-opacity:1;stroke:none"
+       id="rect4010"
+       width="49.898476"
+       height="49.898476"
+       x="153.448"
+       y="61.655075"
+       rx="4.158206"
+       ry="4.158206" />
+    <rect
+       inkscape:export-ydpi="86.400002"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/facebook.png"
+       ry="4.0242772"
+       rx="4.158206"
+       y="63.262218"
+       x="153.448"
+       height="48.291332"
+       width="49.898476"
+       id="rect4012"
+       style="fill:#3c5a98;fill-opacity:1;stroke:none" />
+    <image
+       y="-2.8282516"
+       x="454.33218"
+       id="image4026"
+       xlink:href="data:image/png;base64,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 AABJRU5ErkJggg== "
+       height="64"
+       width="122" />
+    <text
+       xml:space="preserve"
+       style="font-size:42.00805283px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.82532471;stroke-opacity:1;font-family:Tahoma;-inkscape-font-specification:Tahoma"
+       x="164.95982"
+       y="106.82611"
+       id="text4029"
+       sodipodi:linespacing="125%"
+       transform="scale(1.030368,0.97052703)"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/facebook.png"
+       inkscape:export-xdpi="86"
+       inkscape:export-ydpi="86"><tspan
+         sodipodi:role="line"
+         id="tspan4031"
+         x="164.95982"
+         y="106.82611"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;stroke-width:0.82532471;font-family:Verdana;-inkscape-font-specification:Verdana">f</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Suplexmentary Comic NC;-inkscape-font-specification:Suplexmentary Comic NC"
+       x="137.63329"
+       y="57.867004"
+       id="text4033"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4035" /></text>
+    <image
+       y="-0.066388912"
+       x="363.42856"
+       id="image3074"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAAA+CAIAAAAOH2q2AAAAA3NCSVQICAjb4U/gAAACqklEQVRo ge2aPW/TQBiAX38msYkSpUSBFKQKFRjKR4d2QyCGdugC/4AJ/kH+AWJggf4C6FCWzp1IFgQZAhIB tZGqDI1VOUINivLp+PPMUCRaYgdHdhx6uWfM5fzeI793ubs3VLPZBA/Ytt3pdCRJKpVKmqZ56fL/ QHmUBACEkKZpmqZZljXRMQXOGJLnFzafL0x7DBOHsm172mOYOPS0BxAGRBIXiCQuEElcIJK4QCRx gUjiwkxIsgE8w7KBoUY07x8MdmpmVYFknFlejD1ZYHlAtbrJZfh5JoD4/8T/eRKVi93dS2LuGssP N1rm7ofu1tm7h8QFGhTEXxVfrvCiv9ge8Z2uFio30bev3RcHRv/vNrslKVtDtyvtHmpzzHVLf99A fqN7I4A5yTEAAJW93rN871Pr9LjRvuRy5aVZrWR0Ix3SiuA7DEOvpn9PSKNtbBbaT/O97ZouqwgA +rpLr4ti7qZTek+GAO549L62WVA+Gw5NHIDTx8BlxDf3+NAk/c9J493Hgcw5NzoaAkAyTodmCEGk K7OahLoyXqeFTKi/z/6D0Uu3YnfHewz7IHXOJAHESG5dWEuN2A+cQbgcWQozWQPb1qlWTfUa8fFt Lpw9wJ+QgTyFn4usxT19M70obMS9vvOgCK5MYFnlivL20Ky7LakAkIi8eiiEs189TbC1ECQfDV5/ 0SXH7Voi8vy+cCPc2XiC31OIrpoN1W4pSG4YxSOj4lKezV6J5Vai4b/DE/xK8hzIVXXn0JRcsjSd 4h7dEdbnpnlwDSpd0XHDKP8wqwpSDACOSkbpbIJdznLzfNjLzDCkPokLRBIXiCQuEElcIJK4QCRx gUjiAvt9rzLtMUwc6vgn/n/qpfqqW1EGH2ZiThJJXCCSuEAkcYEtyiMKNJgwE5fLvwBoz+y/UpYn 5QAAAABJRU5ErkJggg== "
+       height="62"
+       width="76" />
+    <rect
+       ry="5.30123"
+       rx="5.2083335"
+       y="55.846699"
+       x="231.14722"
+       height="63.614758"
+       width="62.5"
+       id="rect3077"
+       style="fill:#0f5c97;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/twitter.png"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-ydpi="86.400002" />
+    <rect
+       style="fill:#98cdf5;fill-opacity:1;stroke:none"
+       id="rect3079"
+       width="60"
+       height="60"
+       x="232.39722"
+       y="56.604313"
+       rx="5"
+       ry="5"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/twitter.png"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-ydpi="86.400002" />
+    <rect
+       ry="4.158206"
+       rx="4.158206"
+       y="61.655075"
+       x="237.448"
+       height="49.898476"
+       width="49.898476"
+       id="rect3081"
+       style="fill:#126db3;fill-opacity:1;stroke:none"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/twitter.png"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-ydpi="86.400002" />
+    <rect
+       style="fill:#55acee;fill-opacity:1;stroke:none"
+       id="rect3083"
+       width="49.898476"
+       height="48.291332"
+       x="237.448"
+       y="63.262218"
+       rx="4.158206"
+       ry="4.0242772"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/twitter.png"
+       inkscape:export-xdpi="86.400002"
+       inkscape:export-ydpi="86.400002" />
+    <g
+       transform="matrix(1.0286981,0,0,1.0356253,0.42698991,-7.5689993)"
+       style="font-size:42.00805283px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.82532471;stroke-opacity:1;font-family:Tahoma;-inkscape-font-specification:Tahoma"
+       id="text3085"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/twitter.png"
+       inkscape:export-xdpi="86"
+       inkscape:export-ydpi="86">
+      <path
+         d="m 263.64875,107.26497 c -0.72476,0.19145 -1.17126,-0.0193 -2.03274,0.10378 -0.84783,0.12307 -3.42651,-0.0914 -4.09655,-0.0914 -2.33834,0 -4.11603,-0.62903 -5.33305,-1.88708 -1.21703,-1.25805 -1.82555,-3.27504 -1.82554,-6.050966 l 0,-11.384842 -2.605,0 0,-4.03999 2.605,0 0,-6.58427 3.8562,0 0,6.58427 7.95856,0 0,4.03999 -7.95856,0 0,9.641344 c 0,1.203364 0.0273,2.146903 0.082,2.830624 0.0547,0.67005 0.24613,1.29908 0.57433,1.88708 0.30083,0.54698 0.71106,0.95038 1.2307,1.21019 0.5333,0.24614 1.34009,0.36921 2.42039,0.36921 0.62901,0 1.28539,-0.0889 1.96913,-0.26665 0.68371,-0.19144 1.17599,-0.3487 1.47684,-0.47177 l 0.20512,0 1.29982,4.20246"
+         style="font-family:Verdana;-inkscape-font-specification:Verdana"
+         id="path3858"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccsssccccccccccscccscccc" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:28.91419029px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Debussy;-inkscape-font-specification:Debussy Medium"
+       x="329.07388"
+       y="160.4054"
+       id="text3848"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/done.png"
+       inkscape:export-xdpi="125.34"
+       inkscape:export-ydpi="125.34"><tspan
+         sodipodi:role="line"
+         id="tspan3850"
+         x="329.07388"
+         y="160.4054"
+         style="fill:#ffffff;stroke:#000000;stroke-width:0.72285473;stroke-opacity:1">x</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:51.02926636px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.95070207;stroke-opacity:1;font-family:Debussy;-inkscape-font-specification:Debussy Medium"
+       x="146.98564"
+       y="205.8018"
+       id="text3075"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/cancel.png"
+       inkscape:export-xdpi="125.34"
+       inkscape:export-ydpi="125.34"><tspan
+         sodipodi:role="line"
+         id="tspan3077"
+         x="146.98564"
+         y="205.8018"
+         style="stroke-width:0.95070207">x</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Icons">
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.0071013;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 180.04036,231.34727 c -0.16171,3.60402 -30.39636,17.76221 -30.39636,15.13153 0,-3.70662 -0.59601,-27.21272 -0.59601,-30.26304 0,-3.03695 31.13966,11.84916 30.99237,15.13151 z"
+       id="path3884"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ssss"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/play.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
+    <text
+       xml:space="preserve"
+       style="font-size:24.17725182px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.60443133;stroke-opacity:1;font-family:Suplexmentary Comic NC;-inkscape-font-specification:Suplexmentary Comic NC"
+       x="209.12608"
+       y="203.13083"
+       id="text3916"
+       sodipodi:linespacing="125%"
+       transform="scale(1.1217194,0.89148851)"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/pause.png"
+       inkscape:export-xdpi="109.23602"
+       inkscape:export-ydpi="109.23602"><tspan
+         sodipodi:role="line"
+         id="tspan3918"
+         x="209.12608"
+         y="203.13083"
+         style="stroke-width:0.60443133">z</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3920"
+       y="198.4071"
+       x="218.93156"
+       style="font-size:29.918396px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.74795991;stroke-opacity:1;font-family:Suplexmentary Comic NC;-inkscape-font-specification:Suplexmentary Comic NC"
+       xml:space="preserve"
+       transform="scale(1.1217194,0.89148851)"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/pause.png"
+       inkscape:export-xdpi="109.23602"
+       inkscape:export-ydpi="109.23602"><tspan
+         y="198.4071"
+         x="218.93156"
+         id="tspan3922"
+         sodipodi:role="line"
+         style="stroke-width:0.74795991">z</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:35.65954208px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.89148849;stroke-opacity:1;font-family:Suplexmentary Comic NC;-inkscape-font-specification:Suplexmentary Comic NC"
+       x="231.8889"
+       y="192.78284"
+       id="text3924"
+       sodipodi:linespacing="125%"
+       transform="scale(1.1217194,0.89148851)"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/pause.png"
+       inkscape:export-xdpi="109.23602"
+       inkscape:export-ydpi="109.23602"><tspan
+         sodipodi:role="line"
+         id="tspan3926"
+         x="231.8889"
+         y="192.78284"
+         style="stroke-width:0.89148849">z</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:25.15561104px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Suplexmentary Comic NC;-inkscape-font-specification:Suplexmentary Comic NC"
+       x="125.52969"
+       y="461.64386"
+       id="text3940"
+       sodipodi:linespacing="125%"
+       transform="scale(1.8930116,0.52825878)"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/long-pause.png"
+       inkscape:export-xdpi="92.091652"
+       inkscape:export-ydpi="92.091652"><tspan
+         sodipodi:role="line"
+         id="tspan3942"
+         x="125.52969"
+         y="461.64386"
+         style="font-size:8.80446434px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.62889028;stroke-opacity:1;font-family:Sans;-inkscape-font-specification:Terminusmodx">LONG</tspan></text>
+    <text
+       transform="scale(1.1217194,0.89148853)"
+       sodipodi:linespacing="125%"
+       id="text3944"
+       y="267.1514"
+       x="212.72824"
+       style="font-size:24.17725182px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.60443133;stroke-opacity:1;font-family:Suplexmentary Comic NC;-inkscape-font-specification:Suplexmentary Comic NC"
+       xml:space="preserve"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/long-pause.png"
+       inkscape:export-xdpi="92.091652"
+       inkscape:export-ydpi="92.091652"><tspan
+         style="stroke-width:0.60443133"
+         y="267.1514"
+         x="212.72824"
+         id="tspan3946"
+         sodipodi:role="line">z</tspan></text>
+    <text
+       transform="scale(1.1217194,0.89148853)"
+       xml:space="preserve"
+       style="font-size:29.918396px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.74795991;stroke-opacity:1;font-family:Suplexmentary Comic NC;-inkscape-font-specification:Suplexmentary Comic NC"
+       x="222.53372"
+       y="262.42767"
+       id="text3948"
+       sodipodi:linespacing="125%"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/long-pause.png"
+       inkscape:export-xdpi="92.091652"
+       inkscape:export-ydpi="92.091652"><tspan
+         style="stroke-width:0.74795991"
+         sodipodi:role="line"
+         id="tspan3950"
+         x="222.53372"
+         y="262.42767">z</tspan></text>
+    <text
+       transform="scale(1.1217194,0.89148853)"
+       sodipodi:linespacing="125%"
+       id="text3952"
+       y="256.80341"
+       x="235.49106"
+       style="font-size:35.65954208px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.89148849;stroke-opacity:1;font-family:Suplexmentary Comic NC;-inkscape-font-specification:Suplexmentary Comic NC"
+       xml:space="preserve"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/long-pause.png"
+       inkscape:export-xdpi="92.091652"
+       inkscape:export-ydpi="92.091652"><tspan
+         style="stroke-width:0.89148849"
+         y="256.80341"
+         x="235.49106"
+         id="tspan3954"
+         sodipodi:role="line">z</tspan></text>
+    <path
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-opacity:1"
+       d="m 90.601364,198.88009 c -0.554,0 -1,0.446 -1,1 l 0,3.71875 c -1.499098,0.3646 -2.902569,0.94153 -4.1875,1.71875 l -2.625,-2.625 c -0.391737,-0.39174 -1.014513,-0.39174 -1.40625,0 l -3.3125,3.3125 c -0.391737,0.39174 -0.391737,1.04576 0,1.4375 l 2.53125,2.53125 c -0.846276,1.29446 -1.459572,2.71954 -1.875,4.25 l -3.46875,0 c -0.554,0 -1,0.446 -1,1 l 0,4.6875 c 0,0.554 0.446,1 1,1 l 3.1875,0 c 0.313249,1.69064 0.889611,3.27831 1.71875,4.71875 l -2.09375,2.09375 c -0.391737,0.39174 -0.391737,1.04576 0,1.4375 l 3.3125,3.3125 c 0.391737,0.39174 1.014513,0.39174 1.40625,0 l 1.9375,-1.9375 c 1.467454,1.00384 3.095965,1.75481 4.875,2.1875 l 0,2.5625 c 0,0.554 0.446,1 1,1 l 4.6875,0 c 0.554,0 1,-0.446 1,-1 l 0,-2.46875 c 1.839337,-0.38914 3.539636,-1.09815 5.062496,-2.09375 l 1.75,1.75 c 0.39173,0.39174 1.01451,0.39174 1.40625,0 l 3.3125,-3.3125 c 0.39174,-0.39174 0.39174,-1.04576 0,-1.4375 l -1.8125,-1.8125 c 0.91536,-1.51329 1.5413,-3.19899 1.875,-5 l 2.78125,0 c 0.554,0 1,-0.446 1,-1 l 0,-4.6875 c 0,-0.554 -0.446,-1 -1,-1 l -3.0625,0 c -0.44361,-1.63428 -1.13082,-3.13804 -2.0625,-4.5 l 2.28125,-2.28125 c 0.39174,-0.39174 0.39174,-1.04576 0,-1.4375 l -3.3125,-3.3125 c -0.39174,-0.39174 -1.01452,-0.39174 -1.40625,0 l -2.46875,2.46875 c -1.334857,-0.76836 -2.790803,-1.3277 -4.343746,-1.65625 l 0,-3.625 c 0,-0.554 -0.446,-1 -1,-1 l -4.6875,0 z m 2.5625,12.46875 c 3.751397,0 6.8125,3.06109 6.8125,6.8125 0,3.7514 -3.061103,6.78125 -6.8125,6.78125 -3.751397,0 -6.78125,-3.02985 -6.78125,-6.78125 0,-3.75141 3.029853,-6.8125 6.78125,-6.8125 z"
+       id="path3963"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/rsimoni/Development/projects/sixro/pooomodoro/assets/options.png"
+       inkscape:export-xdpi="74.989998"
+       inkscape:export-ydpi="74.989998" />
+  </g>
+</svg>
