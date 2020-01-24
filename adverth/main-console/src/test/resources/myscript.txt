@@ -1,0 +1,4 @@
+# Check whether market cap is higher than 5 billions
+market_cap "value > 5000000000"
+
+crossing_ma week sma 30 sma 10 4
