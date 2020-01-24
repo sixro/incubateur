@@ -1,0 +1,98 @@
+{
+  "airportsCountryCodes": [
+    "IT",
+    "FR"
+  ],
+  "airlines": [],
+  "orderAmount": 523.69,
+  "passengers": [
+    {
+      "countryCode": "",
+      "firstName": "UGO",
+      "lastName": "TESTONI"
+    }
+  ],
+  "airports": [
+    {
+      "countryCode": "IT",
+      "idAirport": "MXP"
+    },
+    {
+      "countryCode": "FR",
+      "idAirport": "CDG"
+    }
+  ],
+  "departureAirportCountryCode": "IT",
+  "arrivalAirportCountryCode": "FR",
+  "eFraudEnvironment": "PRODUCTION",
+  "noDomainContactEmail": "paolo.geroli",
+  "contactMobileNumber": "39|444|555555",
+  "scorePartialEmail": 0.0,
+  "scoreValues": {
+    "departureAirportCountryCode": 0.00,
+    "arrivalAirportCountryCode": 0.00,
+    "outboundRouteDiscount": 0.00,
+    "returnRouteDiscount": 0.00,
+    "contactPhoneNumber": 0.00,
+    "iOvationEvidence": 0.00,
+    "freeEmailDomain": 0.00,
+    "temporaryEmail": 0.00,
+    "emailStartWith": 0.00,
+    "passengerName": 0.00,
+    "binCreditCard": 0.00,
+    "outboundRoute": 0.00,
+    "partialDomain": 0.00,
+    "partialEmail": 0.00,
+    "contactEmail": 0.00,
+    "userCountry": 0.00,
+    "contactName": 0.00,
+    "returnRoute": 0.00,
+    "creditCard": 0.00,
+    "ipAddress": 0.00,
+    "iovationRulesMatched": false,
+    "differentCreditCard": false
+  },
+  "contactCountryCode": "IT",
+  "bookingToDepartureInterval": 1,
+  "contactPhoneNumber": "39|222|2222222",
+  "contactEmailDomain": "bravofly.com",
+  "orderReference": {
+    "transactionNum": 1,
+    "partnerId": "VG",
+    "orderId": "153483236"
+  },
+  "contactFirstName": "PINCO",
+  "contactLastName": "PALLO",
+  "contactIsPassenger": false,
+  "maxMindSuccessful": false,
+  "countersSuccessful": false,
+  "contactEmail": "paolo.geroli@bravofly.com",
+  "panEncrypted": "68bfb396f35af3876fc509665b3dc23a0930aab1",
+  "cardType": "VISA",
+  "voucherCode": "",
+  "orderNotes": "TEST",
+  "idAirlines": [
+    "U2"
+  ],
+  "ipAddress": "127.0.0.1",
+  "language": "IT",
+  "orderCurrency": "EUR",
+  "directSale": true,
+  "server": "NB-B74C",
+  "hasFlights": true,
+  "hasVoucher": false,
+  "hasTrains": false,
+  "hasHotel": false,
+  "bin": "411111",
+  "charter": false,
+  "agency": false,
+  "orderType": "FLIGHT",
+  "paymentType": "CREDIT_CARD",
+  "paymentCode": "01",
+  "idDepartureAirport": "MXP",
+  "idArrivalAirport": "CDG",
+  "flight": true,
+  "hotel": false,
+  "multiProduct": false,
+  "contactPhoneCountry": "IT"
+}
