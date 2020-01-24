@@ -1,0 +1,16 @@
+spring.freemarker.request-context-attribute: rc
+
+mainMenu:
+    -:
+        Albums(inbox): /albums
+    Edit(star):
+        Undo: /edit/undo
+        Redo: /edit/redo
+
+#
+#select a.albumID as id
+#     , a.title
+#	 , b.name as artist_name
+#    from albums a
+#	    inner join artists b on (a.artistID = b.artistID)
+#	;
