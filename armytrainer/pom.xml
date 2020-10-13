@@ -9,7 +9,7 @@
 	<name>ArmyTrainerGame Parent</name>
 
 	<properties>
-		<junit.version>4.12</junit.version>
+		<junit.version>4.13.1</junit.version>
 	
         <libgdx.version>1.7.0</libgdx.version>
 
