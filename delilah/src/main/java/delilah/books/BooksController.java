@@ -23,6 +23,14 @@ public class BooksController {
         
         return Arrays.asList(
             new Book("https://getmdl.io/assets/demos/welcome_card.jpg", "The Fallen", "Davide Baldacci", "A good book"),
+            new Book("https://getmdl.io/assets/demos/dog.png", "La Divina Commedia", "Dante", "'na noia..."),
+            new Book("https://getmdl.io/assets/demos/welcome_card.jpg", "The Fallen", "Davide Baldacci", "A good book"),
+            new Book("https://getmdl.io/assets/demos/dog.png", "La Divina Commedia", "Dante", "'na noia..."),
+            new Book("https://getmdl.io/assets/demos/welcome_card.jpg", "The Fallen", "Davide Baldacci", "A good book"),
+            new Book("https://getmdl.io/assets/demos/dog.png", "La Divina Commedia", "Dante", "'na noia..."),
+            new Book("https://getmdl.io/assets/demos/welcome_card.jpg", "The Fallen", "Davide Baldacci", "A good book"),
+            new Book("https://getmdl.io/assets/demos/dog.png", "La Divina Commedia", "Dante", "'na noia..."),
+            new Book("https://getmdl.io/assets/demos/welcome_card.jpg", "The Fallen", "Davide Baldacci", "A good book"),
             new Book("https://getmdl.io/assets/demos/dog.png", "La Divina Commedia", "Dante", "'na noia...")
         );
     }
