@@ -1,4 +1,0 @@
-# This variable is used for example as a prefix of all relative URLs
-spring.freemarker.request-context-attribute: rc
-spring.freemarker.template-loader-path=classpath: /templates
-spring.freemarker.suffix: .ftl
